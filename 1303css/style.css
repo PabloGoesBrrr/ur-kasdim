@@ -1,0 +1,19 @@
+#container{
+    background: #ffffff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    border: rgb(255, 208, 0) solid 3px;
+}
+
+#fundo{
+    background: #007fc7;
+}
+
+
+.relative{
+    border: 1px solid red;
+    position: fixed;
+    top: -40px;
+    left: 720px;
+}

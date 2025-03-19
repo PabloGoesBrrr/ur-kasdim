@@ -1,0 +1,18 @@
+.conteudo1{
+    border: 1px solid red;
+    background: rgb(198, 198, 247);
+    width: 500px; height: 300px;
+    float: left;
+
+}
+
+.conteudo3{
+    border: 1px solid red;
+    background: rgb(206, 247, 198);
+    width: 150px; height: 150px;
+
+}
+
+.conteudo2{
+    float: left;
+}

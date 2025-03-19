@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+    padding: 2px;
+}
+
+a:visited, a:link{
+    color: rgb(250, 116, 210);
+}
+a:hover{
+    color: rgb(245, 105, 87);
+    background: rgb(219, 216, 216);
+}
+a:active{
+    background: blueviolet;
+    color: bisque;
+}
