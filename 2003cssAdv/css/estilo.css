@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    border: 1px solid red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    background: url(../img/menu.png) no-repeat left bottom;
+    color: #000;
+    text-indent: 40px ;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover, .selecionado a{
+    background-position: right bottom;
+    color: #fff;
+}
+
+
