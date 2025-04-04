@@ -1,0 +1,64 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #f2f2f2;
+}
+
+#container{
+    border: dotted 1px rgb(255, 0, 234);
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 720px;
+}
+
+#marca{
+    border: solid 1px red;
+    height: 300px;
+    background: #9e9e9e url(../imgs/cabecalho.jpg) no-repeat center;
+    text-align: center;
+    line-height: 300px;
+
+}
+
+#conteudo{
+    border: solid 1px red;
+    width: 72%;
+    float: right;
+}
+
+#navegacao{
+    border: solid 1px red;
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#rodape{
+    border: solid 1px red;
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    text-decoration: none;
+}
+
+#conteudo-principal{
+    width: 61%;
+    float: left;
+
+}
+#conteudo-secundario{
+    width: 30%;
+    float: right;
+    background: #d1d1d1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
