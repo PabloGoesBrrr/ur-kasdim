@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Enchanted';
+    src: url('../fonts/Enchanted\ Land.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'Cursed';
+    src: url('../fonts/BlackFlag.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+body, html{
+    font-family: 'Enchanted', 'Courier New', Courier, monospace;
+    background-color: #d3c29d;
+    height: 100%;
+    font-size: 23px;
+}
+.caixa1{
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    opacity: 0.9;
+}
+.caixa1{
+    background-image: url(../imgs/necronomicon.jpg);
+}
+
+
+.page-titulo{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+}
+.page-titulo span.titulo{
+    padding: 1rem;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: rgb(184, 29, 23);
+}
+.page-titulo span.titulo2{
+    font-family: 'Cursed', 'Enchanted';
+    font-size: 40px;
+    letter-spacing: 6px;
+    color: rgb(255, 8, 0);
+    text-decoration: underline;
+    display: block;
+}
+
+/* conteudo principal */
+
+.conteudo{
+    border: double 5px rgb(136, 3, 3);
+    color: #410f0b;
+    background-color: #d3c29d;
+    padding: 40px 80px;
+    text-align: justify;
+}
+h2{
+    color: #6e0800;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+#intro{
+    text-align: center;
+}
+#intro span{
+    font-family: 'cursed';
+    margin: 8px;
+    font-size: 0.7em;
+    color: #ad0c01;
+}
+
+
+/*começo da navbar*/
+#navbar{
+    list-style-type: none;
+    width: 100%;
+    background-color: rgb(75, 71, 68);
+    text-align: center;
+}
+#navbar li{
+    display: inline-block;
+    margin: 5px;
+}
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0 2em;
+    line-height: 2em;
+    border: solid 2px #333232;
+    border-radius: 4px;
+    background: radial-gradient(#c0bfa1, #6b6463);
+}
+#navbar a:hover{
+    border-radius: 0px;
+    background: radial-gradient(#c5c4ab, #3a3837);
+}
+/*fim da navbar*/
+
+/*sessão 2*/
+#enemy{
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+}
+
+
+#divimg{
+    width: 20%;
+    float: left;
+}
+#divimg2{
+    width: 20%;
+    float: right;
+}
+.enemy-text{
+    width: 90%;
+}
+legend{
+    color: #ad0c01;
+    padding-left: 15%;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.conteudo2{
+    border-top: #410f0b 4px double;
+    padding-top: 3%;
+}
+
+.conteudo2 p{
+    margin-right: 100px;
+}
+
+.conteudo2 legend{
+    font-family: cursed;
+    text-align: center;
+    font-size: 1em;
+
+}
+
+.conteudo2 #choice{
+    text-align: center;
+}
+
+.conteudo2 a{
+    color: #910b01;
+}
