@@ -18,6 +18,25 @@
     font-style: normal;
 }
 
+@keyframes tremor {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(-3px, -2px) rotate(-1deg); }
+    20% { transform: translate(3px, 2px) rotate(1.5deg); }
+    30% { transform: translate(-5px, 2px) rotate(-1deg); }
+    40% { transform: translate(5px, -2px) rotate(2deg); }
+    50% { transform: translate(-3px, 2px) rotate(-1deg); }
+    60% { transform: translate(3px, -2px) rotate(1deg); }
+    70% { transform: translate(-2px, 3px) rotate(-1deg); }
+    80% { transform: translate(2px, -3px) rotate(1deg); }
+    90% { transform: translate(-1px, 1px) rotate(0.5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}  
+
+
+.necroMation:hover{
+    animation: tremor 0.3s infinite;
+}
+
 a{
     text-decoration: none;
 }
@@ -47,20 +66,21 @@ body, html{
     width: 100%;
     top: 30%;
     text-align: center;
+    text-shadow: 0 0 5px black;
 }
 .page-titulo span.titulo{
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.8rem;
     letter-spacing: 3px;
     color: rgb(184, 29, 23);
 }
 .page-titulo span.titulo2{
     font-family: 'Cursed', 'Enchanted';
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 6px;
     color: rgb(255, 8, 0);
-    text-decoration: underline;
     display: block;
+    text-shadow: 0 0 10px darkred
 }
 
 /* conteudo principal */
@@ -82,11 +102,13 @@ h2{
     text-align: center;
 }
 #intro span{
-    font-family: 'cursed';
+    display: inline-block;
+    font-family: 'Cursed';
     margin: 8px;
     font-size: 0.7em;
     color: #ad0c01;
 }
+
 
 
 /*começo da navbar*/
@@ -138,8 +160,7 @@ h2{
 legend{
     color: #ad0c01;
     padding-left: 15%;
-    font-size: 1.5em;
-    text-decoration: underline;
+    font-size: 2em;
 }
 
 .conteudo2{
@@ -152,16 +173,37 @@ legend{
 }
 
 .conteudo2 legend{
-    font-family: cursed;
+    font-family: 'cursed';
     text-align: center;
     font-size: 1em;
 
 }
 
-.conteudo2 #choice{
+#choiceText p{
+    width: 100%;
     text-align: center;
 }
 
-.conteudo2 a{
-    color: #910b01;
+#choice ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#choice li{
+    display: inline-block;
+    margin: 10px;
+    color: #b6241a;
+}
+
+#choice a{
+    color: #6e0800;
+}
+
+#choice li:hover{
+    cursor: pointer;
+    background: radial-gradient( rgb(250, 233, 77), orangered);
+    padding: 3px;
+    border: 4px double rgb(187, 50, 0);
+    border-radius: 10px;
+    color: #500601;
 }
