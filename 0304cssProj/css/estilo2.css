@@ -128,11 +128,59 @@ body, html{
     letter-spacing: 5px;
     position: absolute;
     left: 10%;
+    right: 10%;
     top: 100px;
     text-align: center;
 }
 
 .conteudo{
     border: 1px solid red;
+    text-align: center;
     height: 80%;
+    width: 100%;
+
+}
+
+.area1 , .area2 , .area3{
+    display: inline-block;
+    border: 1px solid blue;
+    margin: 10px;
+    color: #410f0b;
+}
+
+.area1{
+    float: left;
+    height: 70%;
+    width: 70%;
+    text-align: justify;
+    padding: 1%;
+}
+.area1 h2{
+    color: #6e0800;
+}
+
+.area2{
+
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 23%;
+    height: 60%;
+    background-image: url(../imgs/shack.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.area3{
+    width: 99%;
+    height: 20%;
+    margin: 7px;
+    padding: 10px;
+}
+
+.half1 , .half2{
+    display: inline-block;
+    height: 90%;
+    width: 40%;
+    border: 1px solid red;
 }
