@@ -27,7 +27,7 @@ body, html{
     font-size: 23px;
 }
 
-.caixa1{
+.caixa1 , .caixa2{
     border: double 8px rgb(195, 176, 55);
     position: relative;
     height: 100%;
@@ -42,7 +42,7 @@ body, html{
     background-image: url(../imgs/backdrop3.jpg);
 }
 
-.caixa-title{
+.caixa-title , .conteudo-texto{
     position: absolute;
     left: 0;
     top: 45%;
@@ -90,3 +90,49 @@ body, html{
 }
 /*fim da navbar*/
 
+
+.caixa2{
+    background-image: url(../imgs/backdrop2.jpg);
+}
+
+
+.caixa2{
+    height: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.conteudo-texto{
+    top: 30%;
+}
+
+.conteudo-texto span.title{
+    border: 5px double beige;
+    opacity: 0.8;
+    color: rgb(238, 224, 163);
+    background-color: black;
+    padding: 18px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.conteudo-texto span.title-text{
+    border-radius: 8px;
+    opacity: 0.9;
+    border: 5px double red;
+    color: white;
+    text-shadow: 0 0 5px black,0 0 10px rgb(255, 255, 255);
+    background-color: rgb(66, 31, 31);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 10%;
+    top: 100px;
+    text-align: center;
+}
+
+.conteudo{
+    border: 1px solid red;
+    height: 80%;
+}
