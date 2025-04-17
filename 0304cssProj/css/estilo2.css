@@ -31,7 +31,7 @@ body, html{
     border: double 8px rgb(195, 176, 55);
     position: relative;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -68,7 +68,6 @@ body, html{
     width: 100%;
     background-color: rgb(75, 71, 68);
     text-align: center;
-    border-bottom: double 5px rgb(195, 176, 55);
 }
 #navbar li{
     display: inline-block;
@@ -134,53 +133,48 @@ body, html{
 }
 
 .conteudo{
-    border: 1px solid red;
-    text-align: center;
-    height: 80%;
-    width: 100%;
 
+    text-align: center;
+    height: 66%;
+    width: 100%;
+    padding-left: 10px;
 }
 
-.area1 , .area2 , .area3{
+.area1 , .area2 {
     display: inline-block;
-    border: 1px solid blue;
     margin: 10px;
     color: #410f0b;
 }
 
 .area1{
     float: left;
-    height: 70%;
+    height: 90%;
     width: 70%;
     text-align: justify;
-    padding: 1%;
 }
+.area1 span{
+    color: #b11f14;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 3px;
+    
+}
+
 .area1 h2{
     color: #6e0800;
+    text-decoration: underline;
+    padding-bottom: 5px;
 }
 
 .area2{
-
-    border-radius: 6px;
-    margin-top: 10px;
+    transform: rotate(-2deg);
     width: 23%;
     height: 60%;
     background-image: url(../imgs/shack.jpg);
     background-position: center;
     background-size: cover;
     opacity: 0.8;
+    margin: 20px;
+    box-shadow: 0 0 5px black;
 }
 
-.area3{
-    width: 99%;
-    height: 20%;
-    margin: 7px;
-    padding: 10px;
-}
 
-.half1 , .half2{
-    display: inline-block;
-    height: 90%;
-    width: 40%;
-    border: 1px solid red;
-}
