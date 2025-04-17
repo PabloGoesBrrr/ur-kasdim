@@ -27,7 +27,7 @@ body, html{
     font-size: 23px;
 }
 
-.caixa1 , .caixa2{
+.caixa1 , .caixa2 ,  .caixa3 , .caixa4{
     border: double 8px rgb(195, 176, 55);
     position: relative;
     height: 100%;
@@ -41,7 +41,6 @@ body, html{
 .caixa1{
     background-image: url(../imgs/backdrop3.jpg);
 }
-
 .caixa-title , .conteudo-texto{
     position: absolute;
     left: 0;
@@ -49,6 +48,39 @@ body, html{
     width: 100%;
     text-align: center;
 }
+/* infeccao*/
+.caixa3 , .caixa4{
+    opacity: 1;
+    color: white;
+    background: black;
+    border: none;
+}
+.caixa3 .caixa-title , .caixa4 .caixa-title{
+    text-shadow: 0 0 5px black, 0 0 10px white;
+}
+.resposta{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+}
+.resposta a{
+    color: rgb(194, 194, 194);
+
+    padding: 5px 15px;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* infeccao*/
 
 .caixa-title span.title{
     border: double beige 5px;
@@ -133,17 +165,19 @@ body, html{
 }
 
 .conteudo{
-
+    border: 1px solid red;
     text-align: center;
-    height: 66%;
+    height: 80%;
     width: 100%;
     padding-left: 10px;
 }
 
-.area1 , .area2 {
+.area1 , .area2 , .area3{
+
     display: inline-block;
     margin: 10px;
     color: #410f0b;
+    font-size: 1em;
 }
 
 .area1{
@@ -156,13 +190,21 @@ body, html{
     color: #b11f14;
     text-shadow: 0 0 2px black;
     letter-spacing: 3px;
-    
 }
 
 .area1 h2{
     color: #6e0800;
     text-decoration: underline;
     padding-bottom: 5px;
+}
+.area1 a{
+    color: rgb(255, 8, 0);
+    letter-spacing: 2px;
+    padding-left: 3px;
+}
+
+.area1 a:hover{
+    text-shadow: 0 0 2px black, 0 0 5px darkred;
 }
 
 .area2{
@@ -177,4 +219,12 @@ body, html{
     box-shadow: 0 0 5px black;
 }
 
+.infection{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
+.infection h2{
+    position: relative;
+}

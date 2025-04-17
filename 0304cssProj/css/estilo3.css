@@ -17,6 +17,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@keyframes tremor {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(-3px, -2px) rotate(-1deg); }
+    20% { transform: translate(3px, 2px) rotate(1.5deg); }
+    30% { transform: translate(-5px, 2px) rotate(-1deg); }
+    40% { transform: translate(5px, -2px) rotate(2deg); }
+    50% { transform: translate(-3px, 2px) rotate(-1deg); }
+    60% { transform: translate(3px, -2px) rotate(1deg); }
+    70% { transform: translate(-2px, 3px) rotate(-1deg); }
+    80% { transform: translate(2px, -3px) rotate(1deg); }
+    90% { transform: translate(-1px, 1px) rotate(0.5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}  
+
+
+.necroMation:hover{
+    animation: tremor 0.3s infinite;
+}
+
+
 a{
     text-decoration: none;
 }
@@ -93,3 +114,69 @@ body, html{
     background: radial-gradient(#c5c4ab, #3a3837);
 }
 /*fim da navbar*/
+
+.conteudo{
+    border: double 5px rgb(136, 3, 3);
+    color: #410f0b;
+    background-color: #d3c29d;
+    padding: 40px 80px;
+    text-align: justify;
+}
+h2{
+    color: #6e0800;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+#enemy{
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+}
+
+#alerta a{
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+    text-shadow: 0 0 1px black;
+}
+#alerta a:hover{
+    border: 4px solid darkred;
+    border-radius: 6px;
+    background: radial-gradient(#410f0b , rgb(145, 22, 22));
+    padding: 0 8px;
+}
+
+#divimg{
+    width: 20%;
+    float: left;
+}
+#divimg2{
+    margin: 0 20px;
+    width: 26%;
+    float: right;
+    opacity: 0.9;
+}
+.enemy-text{
+    width: 90%;
+}
+legend{
+    color: #ad0c01;
+    padding-left: 15%;
+    font-size: 2em;
+}
+
+.conteudo2{
+    border-top: #410f0b 4px double;
+    padding-top: 3%;
+}
+
+.conteudo2 p{
+    margin-right: 100px;
+}
+
+.conteudo2 legend{
+    font-family: 'cursed';
+    text-align: center;
+    font-size: 1em;
+
+}
