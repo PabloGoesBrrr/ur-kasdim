@@ -57,43 +57,74 @@
 
     <div class="pacotes" id="packages">
         <p id="group"> Para garantir a sua sobrevivencia e a derrota dos deadites é importante ter um grupo de no minimo 3 integrantes</p>
-        <div class="colunas" id="coluna1">
-            <div class="face">
-                <img src="imgs/pack1.png" width="60%">
-            </div>
 
-            <div>
-                <h3>Pacote Basic</h3>
-                <p>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo antes de real.</p>
-            </div>
+        <div class="coluna-container">
             
-        </div>
-
-        <div class="colunas" id="coluna2">
-
-            <div class="face">
-                <img src="imgs/pack2.png" width="60%">
-            </div>
-
-            <div>
-                <h3>Pacote Deluxe</h3>
-                <p>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</p>
-            </div>
             
-        </div>
+            <div class="colunas" id="coluna1">
+                <div class="face">
+                    <img src="imgs/engineer.png" width="80%">
+                </div>
 
-        <div class="colunas" id="coluna3">
-            <div class="face">
-                <img src="imgs/pack3.png" width="60%">
+                <div>
+                    <h3>Cientista</h3>
+                    <p>Sempre é de extrema ajuda ter alguém na equipe que possa contruir coisas, montar armas, fazer bombas e armadilhas. Alguém assim pode facilitar muito em momentos que o time esta em numero menor</p>
+                </div>
+            
             </div>
 
-            <div>
-                <h3>Pacote Silverado</h3>
-                <p>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</p>
+            <div class="colunas" id="coluna2">
+
+                <div class="face">
+                    <img src="imgs/leader.png" width="80%">
+                </div>
+
+                <div>
+                    <h3>Lider</h3>
+                    <p>Alguém cheio de coragem (ou que consiga fingir ter) é de extrema necessidade para manter a moral alta, também ajuda já que essa pessoa normalmente é quem vai garantir a segurança do grupo. É de extrema necessidade o lider conseguir tomar decisões rápidas e dificeis.</p>
+                </div>
+                
             </div>
+
+            <div class="colunas" id="coluna3">
+                <div class="face">
+                    <img src="imgs/book.png" width="80%">
+                </div>
+
+                <div>
+                    <h3>Tradutor</h3>
+                    <p>Talvez o membro mais importante. No momento crítico de banir as criaturas vai ser impossivel terminar o trabalho se não tiver alguém capaz de ler as páginas de banimento do Necronomicon</p>
+                </div>
             
         </div>
 
     </div>
+
+    <div class="formulario" id="recrutamento">
+        <h2>Recrutamento de Novos Sobreviventes</h2>
+        <p>Se você está pronto para enfrentar os Deadites, carregar o peso do Necronomicon e talvez prestar ajuda para próximos sobreviventes, inscreva-se abaixo.</p>
+    
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome">
+    
+            <label for="email">Email para Contato:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="habilidade">Habilidade Principal:</label>
+            <select id="habilidade" name="habilidade">
+                <option value="cientista">Cientista</option>
+                <option value="lider">Líder</option>
+                <option value="tradutor">Tradutor</option>
+            </select>
+    
+            <label for="mensagem">Por que devemos recrutar você?</label>
+            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+    
+            <button type="submit">Enviar Recrutamento</button>
+        </form>
+    </div>
+    
+
 </body>
 </html>

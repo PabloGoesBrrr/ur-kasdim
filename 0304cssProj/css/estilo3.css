@@ -181,41 +181,128 @@ legend{
 
 }
 
-.pacotes{
+#group{
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    color: #ad0c01;
+}
+
+
+.pacotes {
     border-top: 6px double darkred;
-    height: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: center;
 }
 
-#group{
-    font-size: 1.3em;
-    padding-bottom: 20px;
+/* novo container flexível */
+.coluna-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.colunas{
-    border: 2px solid rgb(31, 82, 48);
-    background: radial-gradient(#a1dba6, #719773);
-    border-radius: 10px;
-    display: inline-block;
-    height: 90%;
-    width: 20%;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding: 10px;
-}
-
-.colunas:hover{
-    background: radial-gradient(#88bd8e, #5d775e);
+/* estilo das colunas */
+.colunas {
+    background: radial-gradient(#813b36, #4f2020);
+    border: 7px double rgb(243, 202, 0);
+    border-radius: 6px;
     color: white;
+    width: 25%;
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.colunas h3{
-    font-family: 'Cozy';
+/* hover opcional */
+.colunas:hover {
+    background: radial-gradient(#904343, #783a3a);
+}
+
+.colunas h3 {
     padding: 3px;
-    border: 2px solid black;
-    background: radial-gradient( #ccecda ,#9dca9f);
-    border-radius: 20px;
+    border: 2px solid white;
+    background: radial-gradient(#7e6d2f, #442e1b);
+    border-radius: 8px;
     margin: 8px;
 }
+
+
+.formulario {
+    border: 8px double rgb(243, 243, 187);
+    margin-top: 60px;
+    padding: 40px;
+    background: radial-gradient(#7f5d5a, #3b2d2d);
+    color: white;
+    text-align: center;
+}
+
+.formulario h2 {
+    color: #ffe880;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.formulario form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #3a1e1e;
+    padding: 20px;
+    border: 5px double rgb(243, 202, 0);
+    border-radius: 8px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #592e2e;
+    color: white;
+    border: 2px solid #ad0c01;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: gold;
+    background-color: #6d3a3a;
+}
+
+.formulario button {
+    font-family: 'Enchanted';
+    font-size: 1em;
+    text-shadow: 0 0 5px black;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ad0c01;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: darkred;
+}
+
