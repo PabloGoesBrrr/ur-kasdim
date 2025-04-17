@@ -180,3 +180,42 @@ legend{
     font-size: 1em;
 
 }
+
+.pacotes{
+    border-top: 6px double darkred;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#group{
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.colunas{
+    border: 2px solid rgb(31, 82, 48);
+    background: radial-gradient(#a1dba6, #719773);
+    border-radius: 10px;
+    display: inline-block;
+    height: 90%;
+    width: 20%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 10px;
+}
+
+.colunas:hover{
+    background: radial-gradient(#88bd8e, #5d775e);
+    color: white;
+}
+
+.colunas h3{
+    font-family: 'Cozy';
+    padding: 3px;
+    border: 2px solid black;
+    background: radial-gradient( #ccecda ,#9dca9f);
+    border-radius: 20px;
+    margin: 8px;
+}
