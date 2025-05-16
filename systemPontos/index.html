@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pontuação de Jogo</title>
+
+    <script>
+
+        
+        function dobrarPontos(pontos){
+            return pontos * 2
+        }
+        function addCinquenta(pontos){
+            return pontos + 50
+        }
+        function reduzirVinte(pontos){
+            return pontos - (pontos * 0.2)
+        }
+
+        calcularPontuacao = function(pontos, callback){
+            var pontuacaoFinal = callback(pontos)
+            var faltaPouco = 200 - pontuacaoFinal
+
+            if(pontuacaoFinal > 200){
+                document.write('<p>WOW ' + pontuacaoFinal + ' PONTOS!?!? Parabéns!! Pontuação épica!</p>')
+            }else if(pontuacaoFinal < 50){
+                document.write('<p>Apenas ' + pontuacaoFinal + ' pontos? Você pode fazer melhor amiguinho! Tente novamente.</p>')
+            }else if(pontuacaoFinal == 200){
+                document.write('<p> Parabéns!! Você conseguiu 200 pontos! </p>')
+
+            }else{
+                document.write('<p>Você conseguiu ' + pontuacaoFinal + ' pontos! Nada mal, mas na próxima tente conseguir 200 pontos ou mais.<br>Faltaram apenas ' + faltaPouco + ' pontos para 200.</p>')
+            }
+            
+        }
+
+        var pontos = parseFloat(prompt('Digite seus pontos inciais'))
+        var acao = prompt('Selecione sua ação especial:\n1. Dobrar pontos\n2. Adicionar bônus fixo de 50 pontos\n3. Reduzir pontos em 20%')
+
+        if(acao == 1){
+            calcularPontuacao(pontos, dobrarPontos)
+        }else if(acao == 2){
+            calcularPontuacao(pontos, addCinquenta)
+        }else if(acao == 3){
+            calcularPontuacao(pontos, reduzirVinte)
+        }else{
+            document.write('Recarregue a página, você colocou uma ação invalida.')
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
