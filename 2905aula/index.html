@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Funções Nativas Eventos</title>
+</head>
+<body>
+    <a href="index2.html">outraparte</a>
+    <input onkeyup="destructChar()" id="entrada" type="text" placeholder="digite aqui" >
+    <hr/>
+    <span>letras: </span>
+    <input id="onlyletter" type="text" disabled="disabled">
+    <span>numeros: </span>
+    <input id="onlynum" type="text" disabled="disabled">
+
+
+    <script>
+        function destructChar(){
+            var caracter = document.getElementById('entrada').value
+
+            switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('onlynum').value += caracter
+                    break;
+                default:
+                    document.getElementById('onlyletter').value += caracter
+                    break;
+
+            }
+
+        }
+    </script>
+</body>
+</html>
